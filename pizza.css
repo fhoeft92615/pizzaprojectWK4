@@ -1,0 +1,91 @@
+header {
+    height: 150px;
+    background-image: url("pizza-4968645_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 50px;
+    font-family: "Baskerville Old Face";
+    font-size: 6em;
+    color: antiquewhite;
+}
+
+#wrapper {
+    width: 800px;
+    padding-top: 1em;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to top right, #006666 44%, #669999 100%);
+}
+
+body {
+    padding: 5px;
+    background-color: blanchedalmond;
+    color: #FFFFFF;
+}
+
+nav li {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding-right: 3em;
+    color: black;
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    background-color: ivory;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+#yum {
+    background-image: url("pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 2em;
+    z-index: 1;
+}
+
+#pizzaPizza {
+    padding-left: 15px;
+}
+
+h2 {
+    padding-left: 15px;
+}
+
+#labels {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+}
+
+#customerOrderTotal {
+    column-count: 2;
+    column-gap: 20px;
+    height: 350px;
+    padding-left: 3em;
+}

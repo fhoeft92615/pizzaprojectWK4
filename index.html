@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="pizza.css">
+    <meta charset="UTF-8">
+    <title>Fantasy Pizza</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a id="orderBtn">Order Information</a>
+                </li>
+                <li>
+                    <a id="informationBtn">Your Information</a>
+                </li>
+                <li>
+                    <a id="homeBtn">Home</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Fantasy Pizza</h1>
+    </header>
+<div id="yum">
+<div id="wrapper">
+
+    <div>
+        <div id="home">
+            <h2>Place your order below</h2>
+        <br>
+            <form id="pizzaPizza" action="pizza.js" method="post">
+                <h3>Choose Your Size:</h3>
+                <br>
+                <input type="radio" name="size" value="Small" id="Small" />
+                <label for="Small">Small $7.00</label><br>
+
+                <input type="radio" name="size" value="Medium" id="Medium" />
+                <label for="Medium">Medium $9.00</label><br>
+
+                <input type="radio" name="size" value="Large" id="Large" />
+                <label for="Large">Large $12.00</label><br>
+                <br>
+
+                <h3>Choose Your Crust Style:</h3>
+                <br>
+                <input type="radio" name="crust" value="Thin" id="Thin" />
+                <label for="Thin">Thin</label><br>
+
+                <input type="radio" name="crust" value="Pan" id="Pan" />
+                <label for="Pan">Pan</label><br>
+
+                <input type="radio" name="crust" value="Gluten_Free" id="GlutenFree" />
+                <label for="GlutenFree">Gluten Free</label><br>
+                <br>
+
+                <h3>Add Meats - $1.50 each</h3>
+                <br>
+
+                <label><input type="checkbox" name="meats" value="pepperoni"> Pepperoni</label><br>
+                <label><input type="checkbox" name="meats" value="ham"> Ham</label><br>
+                <label><input type="checkbox" name="meats" value="beef"> Beef</label><br>
+                <label><input type="checkbox" name="meats" value="salami"> Salami</label><br>
+                <label><input type="checkbox" name="meats" value="italian sausage"> Italian Sausage</label><br>
+                <label><input type="checkbox" name="meats" value="chicken"> Chicken</label><br>
+                <label><input type="checkbox" name="meats" value="bacon"> Bacon</label><br>
+                <label><input type="checkbox" name="meats" value="philly steak"> Philly Steak</label><br>
+                <br>
+
+                <h3>Add Other Toppings - $1.00 each</h3>
+                <br>
+                <label><input type="checkbox" name="veggies" value="jalapeno peppers"> Jalapeno Peppers</label><br>
+                <label><input type="checkbox" name="veggies" value="onions"> Onions</label><br>
+                <label><input type="checkbox" name="veggies" value="banana peppers"> Banana Peppers</label><br>
+                <label><input type="checkbox" name="veggies" value="green peppers"> Green Peppers</label><br>
+                <label><input type="checkbox" name="veggies" value="red peppers"> Red Peppers</label><br>
+                <label><input type="checkbox" name="veggies" value="diced tomatoes"> Diced Tomatoes</label><br>
+                <label><input type="checkbox" name="veggies" value="mushrooms"> Mushrooms</label><br>
+                <label><input type="checkbox" name="veggies" value="black olives"> Black Olives</label><br>
+                <label><input type="checkbox" name="veggies" value="green olives"> Green Olives</label><br>
+                <label><input type="checkbox" name="veggies" value="pineapple"> Pineapple</label><br>
+                <label><input type="checkbox" name="veggies" value="spinach"> Spinach</label><br>
+
+            </form>
+        </div>
+
+        <div id="information">
+        <form id="location" method="post" action="pizza.js">
+            <br>
+           <h2>Enter Your Information</h2>
+            <div id="labels">
+                <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required="required"/><br>
+                    <br>
+                   <label for="address">Street Address: </label>
+                    <input type="text" id="address" name="streetAddress" required="required"/><br>
+                    <br>
+                    <label for="apt">Apartment Number: </label>
+                    <input type="text" id="apt" name="apartmentNumber"/><br>
+                    <br>
+                    <label for="city">City: </label>
+                    <input type="text" id="city" name="city" required="required"/><br>
+                    <br>
+                    <label for="state">State: </label>
+                    <input type="text" id="state" name="state" required="required"/><br>
+                    <br>
+                    <label for="zipcode">Zip Code: </label>
+                    <input type="text" id="zipcode" name="zipcode" required="required" /><br>
+                    <br>
+                   <label for="number">Telephone Number: </label>
+                    <input type="tel" id="number" name="telephoneNumber" required="required" /><br>
+            </div>
+        </form>
+        </div>
+
+    <div id="order">
+        <h2>Your Order Information</h2>
+        <ul id="customerGoodness"></ul>
+
+        <div id="customerOrderTotal">
+            <h3>Order Total</h3>
+            <div id="subTotal"></div>
+            <div id="salesTax"></div>
+            <div>Delivery fee: $2.00</div>
+            <div id="total"></div>
+
+            <div id="orderName"></div>
+            <div id="orderAddress"></div>
+            <div id="orderApt"></div>
+            <div id="orderCity"></div>
+            <div id="orderState"></div>
+            <div id="orderZip"></div>
+            <div id="orderPhone"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script type="text/javascript" src="pizza.js"></script>
+
+</div>
+</div>
+</body>
+</html>
